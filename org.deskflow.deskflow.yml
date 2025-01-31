@@ -112,6 +112,6 @@ modules:
       - type: git
         disable-shallow-clone: true
         url: https://github.com/deskflow/deskflow.git
-        tag: v1.18.0
-        commit: 23c054661c9d836e01e7c0ed5acb88870a1c388a
+        tag: v1.19.0
+        commit: 9365091c7927fca8ba0fedb7577fce1db6b05d1c
 
