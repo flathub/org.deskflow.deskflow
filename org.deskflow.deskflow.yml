@@ -23,17 +23,6 @@ cleanup:
   - /share/gir-1.0
   - /lib/girepository-1.0
 modules:
-  - name: python3-attrs
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-          --prefix=${FLATPAK_DEST} --no-build-isolation attrs
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/e0/44/827b2a91a5816512fcaf3cc4ebc465ccd5d598c45cefa6703fcf4a79018f/attrs-23.2.0-py3-none-any.whl
-        sha256: 99b87a485a5820b23b879f04c2305b44b951b502fd64be915879d77a7e8fc6f1
-    cleanup:
-      - '*'
   - name: python3-Jinja2
     buildsystem: simple
     build-commands:
@@ -72,13 +61,6 @@ modules:
         url: https://github.com/flatpak/libportal.git
         tag: 0.9.1
         commit: 8f5dc8d192f6e31dafe69e35219e3b707bde71ce
-  - name: puixml
-    buildsystem: cmake-ninja
-    sources:
-      - type: git
-        url: https://github.com/zeux/pugixml
-        tag: v1.14
-        commit: db78afc2b7d8f043b4bc6b185635d949ea2ed2a8
   - name: cli11
     buildsystem: cmake-ninja
     config-opts:
@@ -112,5 +94,5 @@ modules:
       - type: git
         disable-shallow-clone: true
         url: https://github.com/deskflow/deskflow.git
-        tag: v1.20.1
-        commit: bc96ddebdd5c9512e7a19776d2084634b1a3940a
+        tag: v1.21.0
+        commit: f781ac98556ae91b69521231646bc4bcd25255ff
