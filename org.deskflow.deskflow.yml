@@ -17,7 +17,6 @@ cleanup:
   - /lib/cmake
   - /lib/pkgconfig
   - /share/pkgconfig
-  - /share/tomlplusplus
   - /share/cmake
   - /share/doc
   - /share/gir-1.0
@@ -67,22 +66,6 @@ modules:
           url-template: https://github.com/flatpak/libportal/archive/$version.tar.gz
       - type: patch
         path: libportal-qt69.patch
-  - name: cli11
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DCLI11_BUILD_TESTS=OFF
-    sources:
-      - type: git
-        url: https://github.com/CLIUtils/CLI11
-        tag: v2.5.0
-        commit: 4160d259d961cd393fd8d67590a8c7d210207348
-  - name: tomlplusplus
-    buildsystem: cmake-ninja
-    sources:
-      - type: git
-        url: https://github.com/marzer/tomlplusplus
-        tag: v3.4.0
-        commit: 30172438cee64926dc41fdd9c11fb3ba5b2ba9de
   - name: gtest
     buildsystem: cmake-ninja
     sources:
@@ -100,5 +83,5 @@ modules:
       - type: git
         disable-shallow-clone: true
         url: https://github.com/deskflow/deskflow.git
-        tag: v1.24.0
-        commit: 56a1bd68dd539a04a92a4c5a9c8c97217f3160b2
+        tag: v1.25.0
+        commit: d4ff55da138dd7cc41951e282dc9edb29114de96
