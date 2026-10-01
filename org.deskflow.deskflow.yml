@@ -75,8 +75,8 @@ modules:
       - type: git
         disable-shallow-clone: true
         url: https://github.com/deskflow/deskflow.git
-        tag: v1.26.0
-        commit: 760e3b99b00053647a96b405276bf614bd860075
+        tag: v1.27.0
+        commit: 081f6478e654a112168879e67a41ce7d7e4ae3af
         x-checker-data:
           type: git
           tag-pattern: ^v([\\d.]+)$
