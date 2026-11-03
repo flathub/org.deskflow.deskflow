@@ -49,7 +49,7 @@ modules:
         commit: 8a46bf3d4b6af7f25a61be53386cf618218114ef
         x-checker-data:
           type: git
-          tag-pattern: ^([\\d.]+)$
+          tag-pattern: ^([\d.]+)$
   - name: libportal
     buildsystem: meson
     config-opts:
@@ -79,4 +79,4 @@ modules:
         commit: 081f6478e654a112168879e67a41ce7d7e4ae3af
         x-checker-data:
           type: git
-          tag-pattern: ^v([\\d.]+)$
+          tag-pattern: ^v([\d.]+)$
